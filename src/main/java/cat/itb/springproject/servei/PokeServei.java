@@ -23,9 +23,6 @@ public class PokeServei {
     public List<Pokemon> llistatPokemon() {
         return (List<Pokemon>) repositoriPokemon.findAll();
     }
-    public List<Pokemon> llistatPerNomPokemon() {
-        return (List<Pokemon>) repositoriPokemon.findAll(Sort.by(Sort.Direction.ASC,"nomPokemon"));
-    }
 
 
     @PostConstruct

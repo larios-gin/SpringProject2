@@ -17,14 +17,14 @@ public class ControladorPokemon {
 
     @GetMapping("/")
     public String inici(Model m) {
-        m.addAttribute("llistaPokemon", serveiPokemon.llistatPerNomPokemon());
+        m.addAttribute("llistaPokemon", serveiPokemon.llistatPokemon());
         m.addAttribute("Pokemon", new Pokemon());
         return "home";
     }
 
     @GetMapping("/home")
     public String llistarPokemon(Model m) {
-        m.addAttribute("llistaPokemon", serveiPokemon.llistatPerNomPokemon());
+        m.addAttribute("llistaPokemon", serveiPokemon.llistatPokemon());
         m.addAttribute("Pokemon", new Pokemon());
         return "home";
     }

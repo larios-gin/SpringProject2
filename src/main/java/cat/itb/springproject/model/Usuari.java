@@ -9,7 +9,6 @@ import javax.validation.constraints.NotNull;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-
 @Data
 @Entity
 @AllArgsConstructor

@@ -5,5 +5,4 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.CrudRepository;
 
 public interface PokemonRepositori extends CrudRepository<Pokemon, String> {
-    Object findAll(Sort nomPokemon);
 }
