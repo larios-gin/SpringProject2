@@ -27,12 +27,14 @@ public class PokeServei {
 
     @PostConstruct
     public void init() {
-        repositoriPokemon.saveAll(
-                Arrays.asList(
-                        new Pokemon("Pikachu", 25, "Electric", "Pikachu es un Pokemon de tipus Electric introduit a la primera generacio"),
-                        new Pokemon("Gyarados", 130, "Aigua / Volador", "Gyarados es un Pokemon tipus Aigua / Volador introduit a la primera generacio"),
-                        new Pokemon("Jigglypuff", 39, "Normal / Fada", "Jigglypuff es un Pokemon de tipus Normal / Fada introduit a la primera generacio")
-                ));
+        repositoriPokemon.save(new Pokemon("Pikachu", 25, "Electric", "Pikachu es un Pokemon de tipus Electric introduit a la primera generacio"));
+
+//        repositoriPokemon.saveAll(
+//                Arrays.asList(
+//                        new Pokemon("Pikachu", 25, "Electric", "Pikachu es un Pokemon de tipus Electric introduit a la primera generacio"),
+//                        new Pokemon("Gyarados", 130, "Aigua / Volador", "Gyarados es un Pokemon tipus Aigua / Volador introduit a la primera generacio"),
+//                        new Pokemon("Jigglypuff", 39, "Normal / Fada", "Jigglypuff es un Pokemon de tipus Normal / Fada introduit a la primera generacio")
+//                ));
     }
 
 

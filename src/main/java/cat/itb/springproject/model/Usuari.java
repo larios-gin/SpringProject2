@@ -14,8 +14,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Usuari {
-    @NotNull
-    @NotEmpty
+
     @Id
     private String nomUsuari;
 

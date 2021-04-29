@@ -16,9 +16,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 public class Pokemon {
 
-    @NotNull
-    @NotEmpty
-    @Id
+     @Id
     private String nomPokemon;
 
     @NotNull
